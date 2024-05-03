@@ -1,0 +1,44 @@
+
+@import './variable.scss';
+@import './responsive.scss';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.main{
+  font-family: "inter",sans-serif;
+  background-color: $main-bg;
+  color: $main-color;
+}
+
+.container{
+  display: flex;
+
+
+
+}
+
+.menucontainer{
+  width: 250px ;
+  border-right: 2px solid white;
+  padding: 5px 20px;
+
+  @include lg{
+width: max-content;
+  }
+}
+
+.contentcontainer{
+  padding: 5px 20px;
+  width:100%;
+}
